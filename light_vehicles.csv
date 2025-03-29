@@ -1,0 +1,501 @@
+Year,Make,Colour,Fuel type,Number of cylinders,Number of seats,GVM weight,Tare weight
+2003,Mazda,Red,Petrol,7,11,6340,4380
+2012,Suziki,Beige,Diesel,7,1,2040,3996
+2020,Kia,Blue,Electric,4,9,2471,1627
+2012,Toyota,Grey,Diesel,3,9,3568,5080
+2006,Isuzu,Silver,Petrol - Gas,12,13,6989,4755
+2014,Ford,Black,Diesel,2,2,6405,2516
+2003,BMW,White,Petrol - Gas,9,4,2664,3045
+2001,Ford,Khaki,Diesel,9,2,3189,4551
+1993,Mercedes,Grey,Gas,5,0,518,3348
+2011,Mazda,Bronze,Petrol,6,12,2388,1302
+1998,Isuzu,Black,Diesel - Electric,9,12,6763,1726
+1987,Suziki,Khaki,Diesel,5,10,3610,2310
+2015,Volkswagen,Silver,Petrol - Gas,8,10,5273,1446
+2013,Ford,Black,Diesel - Electric,9,10,6853,2534
+1993,Holden,Silver,Petrol - Electric,3,5,2134,4972
+2020,Mitsubishi,Beige,Diesel,3,16,3037,5024
+2020,Isuzu,Khaki,Petrol,10,0,6735,3404
+1993,Suziki,White,Petrol,5,13,6369,5008
+2017,Holden,Bronze,Petrol - Gas,8,7,3318,5292
+2004,Holden,Black,Electric,9,3,4458,3753
+2011,Honda,Grey,Petrol - Gas,10,5,4520,1674
+2019,Kia,Bronze,Petrol,2,8,6547,2261
+1996,Mazda,Red,Petrol - Electric,6,9,1092,3843
+2015,Mitsubishi,Grey,Petrol - Gas,3,2,6273,3755
+1989,Skoda,Silver,Electric,4,9,6633,5214
+2001,BMW,Red,Petrol,7,8,3016,3584
+1999,Toyota,Khaki,Diesel - Electric,6,3,1953,3499
+1997,Nissan,Beige,Petrol - Electric,6,11,6044,1128
+2021,Isuzu,Grey,Diesel,3,6,3528,2872
+2008,Isuzu,Black,Diesel,11,11,6125,1146
+2016,Suziki,Silver,Petrol,11,14,583,4836
+2015,Toyota,White,Diesel,3,11,5473,2585
+1995,Suziki,Beige,Diesel - Electric,10,0,3054,2785
+1986,Toyota,Blue,Diesel - Electric,10,4,2661,1913
+2007,Suziki,Grey,Diesel - Electric,13,3,1076,2389
+2013,Mazda,White,Electric,14,6,932,4329
+1993,Holden,Blue,Electric,10,6,2826,4488
+2004,Landrover,Grey,Petrol,7,8,1415,1423
+2000,Mazda,Silver,Diesel - Electric,7,11,2583,3712
+2001,BMW,Red,Petrol - Gas,6,7,6325,1858
+2018,Toyota,White,Electric,6,8,5617,4060
+2014,Holden,Bronze,Diesel - Electric,7,2,1077,3304
+2021,Volkswagen,Red,Petrol - Gas,6,12,885,2305
+1996,Mazda,Beige,Petrol - Gas,9,13,6702,4471
+2002,Skoda,Silver,Diesel,7,3,2438,4268
+2019,Ford,Black,Gas,10,6,6867,5216
+2021,Holden,Black,Electric,9,5,1402,1328
+2021,Toyota,Beige,Diesel,10,4,4797,4815
+1989,Ford,Black,Petrol - Gas,6,9,3938,4532
+1997,Ford,Red,Diesel,5,9,1045,2271
+2003,Isuzu,Red,Diesel - Electric,9,10,3712,5170
+1999,Landrover,Red,Petrol - Gas,5,5,3446,3606
+1997,Mazda,White,Diesel,0,11,2446,2562
+2000,Suziki,Grey,Petrol - Electric,4,6,3482,3049
+1988,Kia,Silver,Diesel - Electric,4,8,3388,4787
+2000,Holden,Silver,Petrol,8,15,709,3409
+2019,Kia,Grey,Petrol,10,5,3673,2848
+1986,Ford,Red,Petrol,9,8,3184,3693
+2019,BMW,Silver,Petrol,12,6,5320,3963
+1995,Holden,Bronze,Electric,5,6,2211,3787
+1989,Kia,Blue,Petrol,5,2,1507,4038
+2020,Toyota,Khaki,Petrol,9,13,5884,1785
+2016,Volkswagen,Black,Petrol,1,12,1127,3666
+2021,Mercedes,Beige,Petrol - Gas,5,4,1916,4238
+1996,Mazda,Bronze,Petrol - Electric,9,7,2149,4934
+2019,Volkswagen,Red,Diesel - Electric,6,9,3291,4444
+1988,Toyota,Bronze,Petrol - Electric,2,11,6579,4349
+1992,Toyota,Red,Diesel,4,9,3310,2862
+1986,Mercedes,Red,Petrol - Electric,7,14,1507,2912
+1998,Honda,Khaki,Petrol,6,7,3743,4110
+2009,Mercedes,Black,Diesel,6,5,2547,1002
+1992,BMW,Red,Petrol - Electric,9,5,1579,5106
+2008,Landrover,Blue,Petrol,6,18,1855,2705
+2018,Mitsubishi,Bronze,Petrol,6,1,5610,3258
+2017,Nissan,Khaki,Diesel,5,8,1195,3693
+2008,Isuzu,Grey,Petrol,9,0,5080,2855
+2009,Isuzu,White,Petrol - Electric,4,5,4005,1150
+2016,Ford,Blue,Diesel - Electric,7,10,4159,4984
+1993,Toyota,Black,Diesel,11,7,3800,3216
+2001,BMW,Silver,Diesel - Electric,11,8,6570,4988
+2006,Suziki,White,Petrol,10,1,2041,4527
+2021,Isuzu,Black,Diesel - Electric,8,6,1104,1753
+2003,Skoda,Black,Petrol,6,13,5883,2541
+1988,Mazda,Silver,Diesel - Electric,8,3,6683,2781
+1985,Skoda,Bronze,Electric,6,8,1187,2638
+1990,Volkswagen,Grey,Diesel,8,7,3889,3537
+2018,Mercedes,Black,Electric,3,5,3570,3741
+2013,Mitsubishi,Black,Gas,3,7,1544,2552
+2004,Ford,Beige,Petrol - Gas,2,7,585,2268
+2019,Holden,Silver,Petrol,5,3,5330,1776
+1991,Toyota,Silver,Diesel,10,8,2836,1110
+1988,Toyota,Beige,Petrol - Electric,4,6,4865,1769
+2013,Mazda,Red,Petrol,3,2,6820,3212
+1995,Ford,Black,Petrol - Gas,5,8,2064,4200
+2007,Toyota,Bronze,Diesel - Electric,8,6,4917,1509
+1990,Mercedes,Silver,Diesel,2,10,2298,4723
+1985,Isuzu,Silver,Petrol - Electric,3,4,1281,3351
+1994,Landrover,Blue,Petrol - Electric,9,14,6889,3155
+2010,Toyota,Red,Diesel - Electric,7,13,5338,1084
+2005,Suziki,Red,Petrol,8,1,5170,4570
+2009,BMW,Grey,Diesel,4,16,2571,4830
+2007,Mitsubishi,Grey,Petrol - Electric,8,9,4651,4946
+2007,Isuzu,Black,Gas,2,5,6227,1469
+2019,BMW,Grey,Diesel - Electric,12,7,5543,4337
+1985,Mazda,Red,Petrol,4,10,3183,3312
+1992,Isuzu,Silver,Petrol,12,16,4859,4751
+1993,Volkswagen,White,Petrol - Gas,8,8,1931,4604
+2012,Mitsubishi,Silver,Petrol,5,8,6710,3992
+2012,Volkswagen,Black,Petrol - Gas,6,7,3151,2364
+2011,Toyota,Grey,Diesel - Electric,2,13,5613,2045
+2020,Suziki,Beige,Electric,6,8,5690,5110
+2007,Isuzu,White,Diesel - Electric,11,10,1247,3056
+2016,Mazda,Bronze,Petrol - Electric,8,5,2602,1580
+1997,Mazda,Beige,Electric,5,6,2133,3490
+2016,Mitsubishi,Bronze,Gas,2,8,4400,3470
+2009,Volkswagen,Silver,Diesel - Electric,13,9,5686,2943
+1985,Toyota,Black,Petrol - Gas,1,8,3855,2015
+2016,Toyota,Blue,Petrol - Electric,9,2,6008,3677
+1997,Toyota,White,Petrol - Electric,7,2,3568,2445
+2001,Toyota,Silver,Diesel,11,8,2331,1784
+2012,Mitsubishi,Black,Electric,8,4,6317,1128
+1998,Mazda,Blue,Diesel,11,9,2488,2802
+2009,Mazda,Grey,Petrol - Electric,1,10,4477,5324
+1992,Holden,Red,Petrol,8,2,3140,4232
+2009,Holden,Blue,Petrol - Electric,11,9,1296,1495
+2017,Isuzu,White,Diesel,5,9,1626,3650
+2001,Holden,Black,Petrol - Electric,6,13,5830,1723
+2017,Suziki,Beige,Diesel - Electric,3,4,6912,3616
+1986,Suziki,Bronze,Diesel,3,3,1202,3863
+1994,Volkswagen,Silver,Diesel - Electric,5,13,3176,4648
+2006,Ford,Khaki,Diesel - Electric,4,6,4087,1811
+2007,Volkswagen,Beige,Diesel,12,3,2022,3285
+2015,Suziki,White,Petrol - Gas,8,14,4865,3183
+2009,Isuzu,Silver,Petrol,9,12,1755,5114
+1996,Mercedes,Silver,Petrol - Electric,10,5,6680,1985
+1997,Holden,Silver,Petrol - Electric,11,10,1181,1096
+2011,Isuzu,Bronze,Diesel - Electric,4,7,4052,2473
+2014,Mazda,Beige,Petrol,8,0,4821,2500
+2018,Mazda,Silver,Diesel - Electric,8,11,2082,4568
+2007,Toyota,White,Petrol,11,10,2916,1145
+1999,Kia,Grey,Electric,10,5,4180,2494
+2014,Nissan,Khaki,Petrol,7,15,2634,2235
+2002,Holden,Bronze,Petrol,9,6,4072,1594
+2004,Honda,Beige,Gas,7,11,2688,2392
+1997,Mitsubishi,Red,Diesel - Electric,12,0,6647,1099
+2004,Volkswagen,Silver,Electric,7,8,4734,3110
+1992,Isuzu,Blue,Gas,7,1,5188,2173
+2019,Mazda,Grey,Diesel - Electric,6,14,3479,2776
+1995,Mazda,Red,Diesel,6,8,680,3620
+1992,Mazda,Beige,Petrol - Electric,5,3,3127,3451
+2003,Mitsubishi,White,Diesel - Electric,7,10,3902,4262
+2016,Kia,Black,Petrol,10,9,3810,2031
+2015,Kia,Black,Electric,12,4,2465,2909
+2015,Isuzu,White,Diesel,5,1,6319,3721
+1992,Skoda,Black,Diesel,8,16,3341,1573
+1992,Toyota,Khaki,Diesel - Electric,6,4,1851,2565
+1993,BMW,Bronze,Petrol,10,1,1388,4375
+1997,Ford,Blue,Petrol - Electric,8,4,6175,5150
+1998,Mitsubishi,Red,Diesel - Electric,6,11,5535,1380
+2006,Suziki,Silver,Petrol - Gas,12,13,2521,2669
+1995,Skoda,Khaki,Diesel,6,5,6048,3232
+1988,Skoda,Beige,Petrol - Electric,8,4,4087,1657
+2009,Mitsubishi,Khaki,Petrol - Gas,8,5,5281,3781
+1988,Mitsubishi,Silver,Diesel,8,7,2731,4636
+2017,Skoda,Red,Electric,6,6,1510,1188
+2012,Suziki,Beige,Petrol,11,1,6704,1290
+1986,Isuzu,Red,Petrol - Gas,8,9,1410,3619
+2013,Isuzu,Silver,Petrol - Electric,8,0,1675,3703
+2017,Kia,Silver,Petrol,6,10,5528,2419
+2020,Mercedes,White,Electric,9,7,3773,5323
+1993,Volkswagen,White,Diesel - Electric,5,10,3931,3331
+1991,Nissan,Grey,Petrol - Gas,8,6,3701,2123
+2005,Toyota,Silver,Petrol,6,5,1982,2257
+1993,Mitsubishi,White,Electric,2,7,808,4269
+2002,Volkswagen,Grey,Electric,9,9,5166,1770
+2000,Ford,Grey,Petrol,9,3,4072,1180
+2011,Toyota,Grey,Petrol,10,2,1605,3222
+1994,Toyota,White,Gas,6,7,3909,1361
+2004,Isuzu,Silver,Diesel - Electric,7,17,5116,4022
+1996,Ford,Black,Petrol,3,6,5167,2147
+2012,Ford,Grey,Petrol - Electric,9,7,5924,4128
+1986,Mercedes,Grey,Diesel,6,7,1332,1610
+2005,Toyota,Silver,Petrol,6,8,6153,1315
+2004,Landrover,Bronze,Petrol - Gas,10,6,2122,3519
+1990,Toyota,White,Electric,9,6,2554,3650
+1985,Mazda,Black,Petrol,1,3,2614,3232
+1985,Suziki,Bronze,Diesel - Electric,11,10,4984,5088
+2008,Toyota,Khaki,Petrol - Electric,7,3,6954,3025
+2013,Ford,Red,Gas,5,7,5104,2032
+2006,Mitsubishi,Bronze,Diesel - Electric,8,12,4680,3685
+1985,Mitsubishi,White,Electric,12,4,1752,3504
+2020,Kia,Bronze,Diesel - Electric,10,13,5200,3356
+2020,Nissan,White,Gas,5,3,5943,2984
+2015,Landrover,White,Petrol - Electric,4,6,5890,2985
+2012,Mercedes,Beige,Petrol - Electric,7,7,1685,3677
+2018,Nissan,Beige,Petrol - Electric,12,10,1726,3636
+1994,Toyota,Grey,Petrol,6,1,6727,4654
+2021,Isuzu,Red,Petrol,5,9,2307,4218
+2007,Volkswagen,Grey,Diesel,11,7,2544,1155
+2019,Toyota,Beige,Petrol,10,13,3397,3486
+2001,Landrover,Blue,Gas,2,8,6822,3247
+1990,Holden,Silver,Diesel - Electric,7,1,1814,3346
+2013,Kia,Blue,Diesel,3,4,3583,5125
+2005,Toyota,Red,Petrol - Gas,14,12,3169,4230
+1997,Toyota,Blue,Petrol - Gas,3,4,3992,3684
+2009,Kia,Blue,Petrol - Gas,7,6,4618,1844
+1999,Skoda,Red,Petrol,5,4,1913,5169
+1985,Ford,Beige,Petrol,10,3,5880,2687
+2020,BMW,White,Diesel,8,6,4667,5258
+1996,Suziki,Red,Electric,11,13,6802,2490
+2017,Suziki,White,Electric,11,4,2742,2611
+2014,Skoda,Khaki,Diesel,8,9,2788,3872
+2011,Volkswagen,Blue,Electric,10,4,4610,3420
+1990,Toyota,Khaki,Electric,8,10,5966,1200
+1987,Toyota,Bronze,Electric,2,5,5049,3388
+2016,Holden,Bronze,Petrol - Electric,8,2,1815,2021
+2005,Volkswagen,Silver,Petrol - Electric,6,11,6001,2721
+2011,Mazda,Blue,Petrol,6,4,979,1531
+2001,Suziki,Black,Petrol - Gas,10,11,5923,2582
+2007,Honda,Red,Diesel - Electric,10,8,1318,1958
+1985,Mitsubishi,White,Diesel - Electric,9,2,4649,5069
+2020,Honda,Black,Diesel,6,5,6097,5148
+2006,Ford,Blue,Diesel - Electric,6,9,6227,5138
+2002,Nissan,Silver,Petrol - Electric,8,6,2869,2031
+2013,Mercedes,White,Petrol - Gas,8,19,4198,2377
+1989,Toyota,Khaki,Electric,6,2,6815,5151
+2007,Isuzu,Red,Petrol,7,6,3261,1667
+1988,Nissan,Beige,Petrol - Gas,7,11,6317,4943
+2013,Toyota,Grey,Petrol - Electric,9,5,2204,2898
+1999,BMW,White,Diesel - Electric,4,11,3879,4248
+2013,Ford,White,Diesel - Electric,5,1,3709,4804
+1999,Honda,Silver,Petrol - Electric,8,14,1489,2500
+1994,Holden,Blue,Petrol,7,7,1808,3492
+2004,Ford,Khaki,Gas,14,3,6378,1840
+2015,Skoda,Red,Petrol - Gas,8,2,6519,2595
+2006,Honda,Silver,Electric,4,3,6507,3162
+2019,Honda,Khaki,Petrol,8,2,5174,1191
+2014,Mercedes,White,Petrol - Electric,8,5,1099,4524
+2012,Honda,Beige,Petrol - Electric,11,2,6630,1622
+2012,Nissan,Black,Petrol,8,10,1163,1722
+2000,Toyota,Red,Diesel - Electric,11,15,4586,1124
+2011,Honda,Blue,Diesel - Electric,10,12,4577,3407
+1986,Kia,White,Petrol,7,8,3483,3391
+1998,Isuzu,Blue,Petrol - Gas,5,9,1392,4516
+1987,Toyota,Red,Petrol - Electric,5,3,1994,3512
+2008,Toyota,Khaki,Petrol - Electric,9,3,5909,2582
+2016,Holden,Beige,Diesel,14,12,903,2681
+2021,Toyota,Silver,Diesel - Electric,7,6,522,1997
+2002,Toyota,Grey,Petrol,6,6,2056,3195
+2015,Isuzu,White,Electric,6,3,5459,4035
+1996,Nissan,Khaki,Diesel,5,3,2484,2972
+2010,Ford,Black,Petrol - Electric,5,3,5274,3474
+2009,Mitsubishi,Bronze,Petrol,9,6,5459,5207
+2009,BMW,White,Diesel - Electric,8,7,4298,1070
+2003,Suziki,Bronze,Electric,6,1,3344,3278
+2000,Honda,White,Electric,4,7,5219,2440
+2002,Nissan,White,Petrol,5,6,5078,1607
+2020,Mazda,Grey,Diesel - Electric,9,8,6373,2757
+1992,Mercedes,Black,Diesel,2,5,4668,3338
+2008,Toyota,Blue,Gas,14,5,4368,3016
+1989,Honda,Black,Gas,6,14,3819,2204
+2019,Mazda,Khaki,Petrol,12,3,4876,4268
+2008,Mercedes,Red,Gas,7,10,3515,2850
+2016,Isuzu,Khaki,Diesel - Electric,3,2,1400,4800
+2009,Isuzu,Black,Gas,8,5,3105,5116
+1988,Mitsubishi,Grey,Petrol - Electric,6,0,1371,1896
+1987,Skoda,Grey,Diesel,10,3,6885,2762
+1992,Landrover,Bronze,Petrol,6,14,1649,3507
+2009,Volkswagen,White,Diesel,3,2,6880,4521
+1987,Mercedes,Silver,Electric,8,4,1506,2189
+2001,Suziki,Blue,Petrol - Gas,6,3,731,2473
+1986,Landrover,Silver,Petrol - Gas,5,7,2534,5166
+2008,Kia,Khaki,Diesel,9,11,2640,1933
+2011,Honda,Blue,Diesel - Electric,11,10,5560,3264
+2003,Toyota,Red,Petrol,8,15,5417,1846
+1987,Mitsubishi,Grey,Petrol - Electric,10,7,5899,1478
+1991,Mazda,Beige,Petrol - Gas,7,10,900,1285
+1998,Landrover,Khaki,Petrol,6,13,2157,3032
+2006,BMW,White,Petrol,14,5,6929,2103
+1993,Mitsubishi,Bronze,Electric,5,7,3657,2598
+2001,Suziki,Khaki,Petrol,7,1,2780,4145
+1997,Isuzu,Khaki,Petrol,1,6,2608,1972
+2003,Landrover,Silver,Petrol,3,14,2617,1778
+2010,Toyota,White,Petrol - Electric,5,7,4937,4296
+2015,BMW,Grey,Petrol - Gas,5,2,3151,2527
+1991,Mazda,Grey,Gas,7,8,6278,1843
+2014,Toyota,White,Diesel,3,7,5512,5328
+2006,Toyota,Red,Petrol - Gas,6,13,2645,2666
+1993,Nissan,Silver,Petrol,4,7,1927,2721
+1999,Ford,Black,Petrol,11,9,3249,1015
+2003,Holden,Red,Diesel,6,10,1829,4564
+2006,Mazda,Bronze,Petrol - Electric,10,10,4754,4089
+2001,Volkswagen,Silver,Diesel - Electric,9,9,1553,2508
+2013,BMW,Grey,Petrol - Gas,7,10,1891,1204
+2003,Toyota,Blue,Diesel,7,1,3985,4333
+1996,Holden,Black,Petrol,1,7,4667,3643
+2016,Toyota,Grey,Gas,11,1,3466,1942
+2000,Isuzu,Red,Petrol - Gas,7,7,1049,1552
+2007,Landrover,Grey,Petrol,12,1,3583,4559
+2021,Ford,Black,Gas,9,13,1464,2874
+2015,Isuzu,Blue,Diesel - Electric,4,4,2013,3665
+1987,Toyota,Grey,Petrol,10,7,3472,1742
+2013,Toyota,Red,Diesel,11,13,5300,1836
+2021,Mitsubishi,Grey,Petrol - Electric,10,11,2736,5261
+2009,Holden,Silver,Petrol - Gas,3,4,6977,2668
+1995,Mazda,Black,Diesel - Electric,10,5,6751,4868
+2000,Holden,Grey,Diesel - Electric,8,6,1908,3057
+2002,BMW,Blue,Petrol - Gas,9,10,2221,3562
+1995,Mercedes,Blue,Gas,4,4,6327,3199
+2010,Holden,Khaki,Petrol - Gas,3,5,4949,2174
+2006,Suziki,Red,Electric,8,11,3378,4116
+1991,Isuzu,White,Gas,2,0,5879,3593
+2021,Suziki,Silver,Petrol - Electric,6,6,4793,4562
+1997,Kia,Beige,Petrol - Electric,1,7,6938,3868
+2013,Mitsubishi,White,Petrol,7,6,5118,1708
+1995,Volkswagen,Blue,Petrol,11,9,5453,2091
+1991,Toyota,White,Petrol - Electric,1,6,1307,1344
+2007,Toyota,Red,Petrol,4,1,3506,3185
+2006,Mitsubishi,Silver,Petrol - Gas,8,7,3563,2489
+2009,Volkswagen,Bronze,Diesel - Electric,9,7,2417,1839
+1986,Suziki,Black,Electric,2,7,4179,3442
+2019,Isuzu,White,Gas,10,5,2055,2355
+2011,Volkswagen,Bronze,Diesel - Electric,7,2,2861,3551
+2009,Mazda,White,Petrol,9,5,6762,1046
+2016,Kia,Red,Petrol - Gas,9,6,4052,2024
+1987,Ford,Black,Diesel,10,11,1364,1329
+2009,Mitsubishi,Black,Petrol - Gas,5,5,2717,1097
+2018,Mitsubishi,Bronze,Petrol,6,3,1312,3858
+2017,Holden,Red,Petrol,9,8,3697,4671
+2003,Toyota,Red,Diesel - Electric,7,6,772,1430
+2000,Isuzu,Bronze,Diesel,6,5,4328,1488
+2007,BMW,Beige,Electric,7,19,1185,3559
+1998,Kia,Red,Diesel,6,15,5227,3088
+1993,Kia,Red,Diesel,8,3,5928,2045
+2004,Volkswagen,Bronze,Petrol,9,5,3956,1358
+2003,Toyota,Grey,Petrol,5,3,597,4811
+2011,Toyota,White,Petrol,7,9,3560,2876
+1995,Mazda,Grey,Electric,8,6,3344,1724
+2017,Holden,Silver,Petrol - Gas,7,6,1593,1639
+2000,Nissan,Silver,Petrol - Gas,7,0,5635,2931
+2004,Suziki,Khaki,Gas,3,6,4937,4609
+1988,Volkswagen,Blue,Diesel - Electric,2,9,1051,1505
+2014,Kia,Red,Electric,7,2,4523,2009
+2006,Skoda,White,Petrol,5,2,2411,2716
+1987,Skoda,Silver,Petrol,7,11,6283,2123
+1985,Toyota,Grey,Petrol - Gas,13,5,5750,3112
+1990,Honda,Black,Electric,3,12,3197,4545
+2014,Holden,Grey,Diesel,7,6,1165,2750
+2008,Toyota,Blue,Petrol - Gas,12,4,6207,3686
+2001,Ford,Red,Gas,7,14,5891,2965
+2009,BMW,Beige,Electric,4,4,5043,2407
+1989,Toyota,Grey,Petrol - Electric,6,7,6827,4458
+2014,Volkswagen,White,Petrol - Electric,4,9,3056,3758
+1989,Holden,White,Gas,5,12,6962,2682
+2002,Honda,Black,Petrol - Gas,4,4,3183,1305
+1991,Isuzu,Beige,Petrol,9,13,5664,2040
+2019,Toyota,Beige,Petrol - Electric,6,3,3668,3937
+1998,Mitsubishi,Black,Petrol,8,7,4701,4549
+1990,Kia,Black,Gas,7,10,608,1376
+1991,Ford,Black,Petrol - Gas,11,5,5106,4879
+2009,Ford,Khaki,Petrol - Electric,8,1,1264,4163
+2007,Holden,Red,Electric,12,8,1041,2802
+1992,Isuzu,Black,Petrol - Gas,1,11,4911,3994
+2016,Ford,Beige,Petrol,10,12,4250,4838
+1985,Nissan,Beige,Petrol - Gas,8,15,4507,1089
+2010,Mitsubishi,White,Diesel,10,5,5425,4432
+2004,BMW,Blue,Petrol,7,3,733,4272
+1996,Skoda,Black,Diesel - Electric,5,8,6869,2875
+2007,Holden,Red,Electric,2,7,575,4138
+2019,Kia,Silver,Diesel - Electric,1,8,6126,2743
+1995,Isuzu,Grey,Diesel,7,10,5966,4892
+1990,Nissan,Black,Petrol - Electric,1,10,4589,1184
+2013,Holden,Khaki,Electric,13,4,3230,5032
+2009,Holden,Grey,Petrol,14,1,4882,5097
+1994,Honda,Black,Diesel - Electric,8,7,2787,1033
+2009,Kia,Khaki,Diesel,8,8,707,1420
+1993,Kia,Grey,Petrol,7,1,6664,1550
+2013,Ford,Beige,Petrol - Electric,6,4,4496,4453
+1999,Mazda,White,Petrol,3,9,4134,5096
+2007,Nissan,Red,Electric,6,8,5478,4281
+2012,Volkswagen,Grey,Gas,2,5,6786,4938
+1993,Mazda,Silver,Diesel,5,6,6444,2626
+1991,Holden,Silver,Petrol - Electric,6,10,6936,5307
+2016,Nissan,Red,Gas,6,4,5043,3139
+2007,Isuzu,Grey,Diesel,9,5,5777,1031
+1995,Mazda,White,Petrol - Gas,10,1,6320,4363
+2003,Kia,Khaki,Electric,7,14,3738,3005
+2015,Mazda,Grey,Diesel - Electric,7,5,4942,3190
+1990,Holden,Silver,Petrol - Electric,10,4,2269,4626
+1991,Mazda,Beige,Diesel,5,3,5806,4078
+2003,Ford,Black,Diesel,7,6,4157,4985
+2017,Landrover,Black,Petrol,9,0,2993,4367
+1993,Toyota,Grey,Petrol - Gas,10,7,3211,1430
+2011,Honda,Red,Diesel - Electric,5,14,2737,3138
+2004,Mazda,White,Petrol - Gas,5,12,6368,5211
+2000,Toyota,Blue,Petrol,13,8,3104,2866
+2015,Ford,Beige,Petrol,5,7,1222,5190
+1990,Suziki,Black,Diesel,6,1,2999,4306
+2016,Landrover,Red,Diesel - Electric,7,12,3556,3822
+1989,Holden,Bronze,Diesel - Electric,5,12,3906,4742
+1998,Toyota,Black,Petrol,9,4,6342,1229
+2000,Isuzu,Black,Petrol - Gas,5,5,851,2496
+2007,Volkswagen,Blue,Electric,13,17,4484,5002
+2017,BMW,White,Gas,3,8,3444,1661
+2012,Kia,Bronze,Petrol,7,0,6197,1519
+1992,Isuzu,Khaki,Petrol,10,8,5676,1859
+2002,Mercedes,White,Petrol,4,1,6124,1632
+2015,Toyota,Khaki,Gas,6,3,1876,1353
+2018,Skoda,Grey,Petrol - Electric,4,9,1568,4912
+1993,Ford,White,Petrol,12,7,5019,3111
+2000,Ford,White,Electric,9,2,2312,2572
+1995,Nissan,Khaki,Petrol,5,3,1568,2354
+2019,Toyota,Silver,Diesel,14,7,6315,2614
+1993,Holden,Beige,Gas,15,6,1832,4161
+2005,Skoda,White,Diesel,10,5,796,4962
+2000,Mazda,Silver,Diesel,1,11,4168,3326
+2007,Suziki,Grey,Petrol,3,11,5733,1716
+2005,Mazda,Silver,Petrol - Gas,4,1,6055,2167
+1989,Nissan,Bronze,Gas,1,12,3034,4686
+2011,Toyota,Black,Electric,2,9,3101,5094
+2013,Volkswagen,Beige,Petrol - Gas,8,8,6261,4986
+1995,Toyota,Black,Gas,3,7,4667,3522
+1988,Volkswagen,Red,Diesel,11,7,1040,3605
+2005,Toyota,Bronze,Diesel,9,7,4252,3435
+1994,Holden,White,Diesel - Electric,8,3,2366,4461
+1991,Nissan,White,Petrol - Electric,5,6,5819,3269
+1994,Mazda,Blue,Electric,5,8,5925,1953
+2000,Ford,White,Diesel,7,1,5502,1951
+2000,Kia,White,Gas,3,9,2303,5189
+2008,Mitsubishi,Silver,Petrol - Gas,6,3,6887,4430
+1996,Honda,Black,Diesel - Electric,5,9,4890,1788
+1998,Toyota,Black,Petrol - Electric,2,11,926,2611
+2016,Toyota,Blue,Diesel,6,7,3033,3030
+2006,Isuzu,Black,Petrol,6,4,1462,1868
+2011,Mitsubishi,White,Diesel - Electric,9,12,985,2059
+1996,Ford,White,Petrol,7,8,3825,3713
+2010,Mazda,Black,Electric,4,9,6798,3432
+2003,Honda,Silver,Diesel,1,11,6693,3512
+1999,Isuzu,Red,Petrol,6,11,4404,4091
+1996,BMW,Bronze,Diesel,5,11,4239,2794
+2020,Mazda,Grey,Diesel - Electric,5,5,5448,4731
+2006,Kia,Blue,Petrol,2,9,739,4680
+2011,Kia,Black,Petrol - Gas,9,10,1699,5140
+2003,Kia,Beige,Diesel,12,12,2940,5088
+2019,BMW,Bronze,Petrol - Electric,7,7,5767,2724
+1992,Mercedes,Red,Petrol - Electric,5,7,5804,2896
+2003,Mercedes,White,Petrol - Electric,13,1,3451,3828
+2010,Suziki,Beige,Diesel,8,4,5602,4461
+1993,Nissan,Bronze,Diesel - Electric,9,3,4266,1051
+2015,Suziki,Beige,Petrol - Electric,5,6,3399,2632
+2003,Mazda,Grey,Petrol,6,14,2095,4055
+2012,Ford,Khaki,Petrol - Gas,9,5,2986,5039
+2021,Mazda,Beige,Diesel - Electric,7,15,3635,2426
+1997,Mazda,White,Petrol - Electric,4,3,3992,4838
+2015,Isuzu,Khaki,Petrol,1,3,1635,4055
+1996,Toyota,Red,Diesel,9,10,4401,5042
+1994,Nissan,Red,Electric,8,4,2314,2604
+2013,Mazda,Bronze,Petrol - Gas,8,8,2716,4709
+1987,Kia,Khaki,Petrol - Electric,11,13,6184,2311
+1988,Mazda,Beige,Petrol - Electric,10,14,6485,3645
+2010,Mazda,Grey,Petrol - Gas,9,7,4162,4774
+2011,Toyota,Red,Petrol - Electric,8,13,3061,4584
+2013,Ford,Black,Gas,12,5,2545,1682
+1997,Mercedes,Grey,Electric,4,1,5178,5109
+1993,Mitsubishi,Blue,Electric,6,8,1278,2673
+2012,Honda,Silver,Gas,5,3,771,2029
+1999,Nissan,Bronze,Petrol,8,7,700,5159
+2006,Mazda,Blue,Petrol - Electric,7,6,3176,2698
+1997,Volkswagen,White,Diesel,5,10,5099,5048
+1998,Mercedes,Blue,Diesel - Electric,8,10,5039,3018
+2020,Landrover,Beige,Electric,1,3,8863,311
+2020,Landrover,Beige,Electric,4,2,8714,1104
+2021,Landrover,Beige,Electric,4,3,7282,1456
+2021,Landrover,Beige,Electric,3,3,8569,1095
+2021,Landrover,Beige,Electric,3,2,8587,386
+2020,Landrover,Beige,Electric,4,1,7846,874
+2019,Landrover,Beige,Electric,2,1,8690,1325
+2021,Landrover,Beige,Electric,4,2,8028,647
+2020,Landrover,Beige,Electric,1,1,8159,807
+2021,Landrover,Beige,Electric,3,2,8770,1149
+2021,Landrover,Beige,Electric,4,2,8537,1135
+2020,Landrover,Beige,Electric,4,3,8187,785
+2021,Landrover,Beige,Electric,2,3,7342,795
+2021,Landrover,Beige,Electric,3,3,8869,301
+2020,Landrover,Beige,Electric,4,2,8191,1433
+2021,Landrover,Beige,Electric,1,1,8586,436
+2021,Landrover,Beige,Electric,1,1,7035,873
+2019,Landrover,Beige,Electric,1,2,8611,1117
+2021,Landrover,Beige,Electric,1,3,7258,865
+2020,Landrover,Beige,Electric,4,2,7398,235
+2021,Landrover,Beige,Electric,4,3,8616,961
+2021,Landrover,Beige,Electric,4,3,8753,1484
+2021,Landrover,Beige,Electric,4,1,7795,408
+2019,Landrover,Beige,Electric,2,2,8178,792
+2021,Landrover,Beige,Electric,2,3,8448,1392
+2019,Landrover,Beige,Electric,2,1,8269,782
+2019,Landrover,Beige,Electric,3,1,7707,231
+2021,Landrover,Beige,Electric,4,1,8820,1009
+2021,Landrover,Beige,Electric,4,3,7096,1184
+2019,Landrover,Beige,Electric,2,1,8865,823
