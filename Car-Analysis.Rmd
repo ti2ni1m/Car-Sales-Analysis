@@ -1,0 +1,301 @@
+---
+title: "Car Analysis"
+author: "Manan Bhatia"
+date: "2022-05-23"
+output:
+  pdf_document: default
+  word_document: default
+---
+
+## Question 1.1:
+### *Test if the mean number of cylinder is different between Mazda and Isuzu vehicles*
+Since the question asks specifically if there is any different in the mean number of cylinders between Mazda and Isuzu.
+
+To find the evidence of differences in the mean number of cylinders between Mazda and Isuzu, I will specifically use the t.test techniques with the 
+method: alternative = "two.sided" and compute a hypothesis test, as I only want to find if there is any difference in means between two pairs of data.
+If the result gives out a p-value of less than 0.05, it means there is evidence of differences between Mazda and Isuzu's mean number of cylinders.
+
+```{r}
+vehicles= read.csv("light_vehicles.csv")
+head(vehicles)
+```
+
+H0: No difference between number of cylinders of both Mazda and Isuzu vehicles
+HA: A difference between number of cylinders of both Mazda and Isuzu vehicles
+```{r}
+vehicles.Isuzu <- subset(vehicles, Make=='Isuzu', Number.of.cylinders, drop=TRUE)
+mean(vehicles.Isuzu)
+vehicles.Mazda <- subset(vehicles, Make=='Mazda', Number.of.cylinders, drop=TRUE)
+mean(vehicles.Mazda)
+```
+```{r}
+label<-c("Isuzu", "Mazda")
+boxplot(vehicles.Isuzu, vehicles.Mazda, names=label, col="skyblue", main="Boxplot the number of cylinders between Mazda and Isuzu")
+```
+
+- The box plot displays an overview of all number of cylinders of Mazda and Isuzu from the max value to the min value, the mean, the range, the quartile and quartile data.
+
+- This graphing techniques on two groups of value allows viewers to have a better overview of the overall data within the two groups.
+
+####
+
+Then the t.test is proceeded on the two extracted data of Number of cylinders from Mazda and Isuzu, to find the probability of the occurrence of any differences in the number of cylinders. if p is smaller than 0.05, then it will reject the null hypothesis and accept that there is an evidence of difference.
+
+```{r}
+vehicles.t.test <- t.test(vehicles.Isuzu,vehicles.Mazda, var.equal=TRUE, alternative="two.sided")
+vehicles.t.test$p.value
+```
+P value is more than 5%, The null hypothesis test is not rejected as there is a very slight difference between Mazda and Isuzu
+####
+
+####
+
+```{r}
+sim= replicate(1000, {
+  Isuzu.resamp= sample(vehicles.Isuzu, replace=TRUE)
+  Mazda.resamp= sample(vehicles.Mazda, replace=TRUE)
+  t.test(Isuzu.resamp, Mazda.resamp, var.equal=TRUE)$statistic
+})
+hist(sim, breaks=20, main= "Mean differences in number of Cylinders between Isuzu and Mazda")
+quantile(sim, c(0.05, 0.95)) 
+quantile (sim, 0.50)
+abline(v=quantile(sim, c(0.05, 0.95)), col=6)
+```
+- In graphing techniques, I used the distribution histogram to represent the data because, the data is replicated 1000 times. Therefore, the distribution histogram can attribute the occurrence frequency of data in a most observable way when replicating
+
+- In fact, from the graph alone, we can see the mean differences in number of cylinders between Isuzu and Mazda is already centralised at approximate `r quantile(sim,0.50)`.This means Mazda has almost 4 more numbers of cylinders than Isuzu. And from the function quantile(sim, c(0.05, 0.95)), We are 95% confident that the mean difference in number of Cylinders between Isuzu and Mazda is approximately between `r quantile(sim,0.05)` to `r quantile(sim, 0.95)`.
+
+\newpage
+
+## Question 1.2:
+### *Test if the mean number of seats is different for each colour. If so, determine which colour has a statistically different mean*
+The question is asking for evidences of different of the mean number of seats for each colour and then shows which colour is statistically different.
+Therefore, in this example, I will use oneway test and then TukeyHSD test to find the different for each colour. As one way test is specifically used for finding any significant differences in means between two or more groups, we set the threshold of 0.05, if p-value is less than 0.05, meaning there is a significant differences between means of two groups or more. Meanwhile, TukeyHSD test enables users to see the differences in means, the p adjacent between every possible paired groups. If p-value is less than 0.05, there is a different between means of that paired groups.
+
+```{r}
+F.test <- oneway.test(vehicles$Number.of.seats~vehicles$Colour, data=vehicles)
+F.test #p-value is small, therefore F.test is big
+```
+```{r}
+tu <- aov(vehicles$Number.of.seats~vehicles$Colour, data=vehicles)
+tu
+```
+- Since we want an anova table to proceed to the next step of using TukeyHSD test, we will call the function aov().
+```{r}
+summary(tu)
+```
+```{r}
+tuke.test<-TukeyHSD(tu)
+tuke.test
+par(mar=c(5.1,10,4.1,2.1), cex=0.8)
+plot(TukeyHSD(tu), las=1)
+```
+
+- I used plot(TukeyHSD()) graphing since it can visually show the comparison between paired data.However, the data is too large, so before that, I need to set a default parameter with margin size that will enable to compact all the data of fit to the plot(TukeyHSD()).
+
+- there are not much differences in means of number of sets in each colour, using the Tukey test the most difference I can see with is Blue-Beige, Bronze-Beige, White-Beige, Red-Blue, Red-Bronze, Silver-Bronze, Silver-Grey, and Silver-Khaki.
+
+\newpage
+
+## Question 1.3:
+### *1/ Use Bootstrapping to compute a 88% confidence interval for the difference between GVM and TareWeights for Volkswagen vehicles?*
+### *2/ Compute a 88% cI for the difference between GVM and Tare weights for Volkswagen vehicle by using approximation.*
+### *3/ Can we conclude that GVM weights are different than Tare weights for Volkswagen vehicles (Dont do a hypothesis test)?*
+### *4/ Test the hypothesis that GVM weights are greater than Tare weights for Volkswagen vehicles*
+
+```{r}
+#1/
+#There is no record on Volkswagen, a simulation boot to approximate data is needed:
+count.Volkswagen.GVM.weight= length(subset(vehicles, Make=="Volkswagen", GVM.weight, drop=TRUE))
+count.Volkswagen.GVM.weight
+count.Volkswagen.Tare.weight= length(subset(vehicles, Make=="Volkswagen", Tare.weight, drop=TRUE))
+count.Volkswagen.Tare.weight
+```
+
+- There are only `r count.Volkswagen.GVM.weight` recorded data of the GVM.weight of Volkswagen.
+
+- There are only `r count.Volkswagen.Tare.weight` recorded data of the Tare.weight of Volkswagen
+
+####
+
+I do the simulation by bootstrapping the shuffled data from GVM and Tare weight of Volkswagen vehicles.
+```{r}
+Volkswagen.GVM = subset(vehicles, Make=="Volkswagen", GVM.weight, drop=TRUE)
+Volkswagen.GVM
+Volkswagen.Tare= subset(vehicles, Make=="Volkswagen", Tare.weight, drop=TRUE)
+Volkswagen.Tare
+d0= mean(Volkswagen.GVM-Volkswagen.Tare)
+d0
+
+boot= replicate(10000, {
+  Volkswagen.GVM.sampled= sample(Volkswagen.GVM, replace=TRUE)
+  Volkswagen.Tare.sampled= sample(Volkswagen.Tare, replace=TRUE)
+  mean(Volkswagen.GVM.sampled-Volkswagen.Tare.sampled)
+})
+hist(boot, breaks=20)
+quantile(boot, c(0.06, 0.94))
+abline(v=quantile(boot, c(0.06, 0.94)), col=6)
+```
+
+I used distribution histogram to represent the bootstrapping data since it can show the frequency of occurrence of the bootstrapping data. And then the function abline shows the horizontal vector to highlight the range of 88% confident interval. In this boot distribution, the abline lines up between `r quantile(boot, c(0.06,0.94))`. And the highest frequency occurrence of the difference between sampled GVM and Tare weight of Volkswagen is at `r quantile(boot, 0.50)`.
+
+####
+
+The Wilcox.test is used show the difference between two pairs of data. In this case, we use Wilcoxon-Mann-Whitney test to find the range of difference between GVM and Tare Weight of Volkswagen vehicles that has 88% confident level.
+
+```{r}
+#2/
+CI_88_approx=wilcox.test(Volkswagen.GVM,Volkswagen.Tare, conf.int= TRUE, conf.level=0.88)
+CI_88_approx
+CI_88_approx$conf.int
+#The approximate conf level of 88%CI
+
+#3/
+#To conclude that the GVM weight are different than Tare weights of Volkswagen vehicles since 88% of data lied in between -268 and 1242 and a very small percentage lying on 0 which means the difference is zero between GVM and Tare weight for Volkswagen.
+```
+
+
+So 88% confident level locates between `r CI_88_approx$conf.int`.
+
+####
+
+I will use the Wilcoxon-Mann-Whitney test to find if GVM weights are greater than Tare weights for the vehicle Volkswagen. Before that, I need to conduct the hypothesis.
+
+
+```{r}
+#4/
+#Using Wilcoxon-Mann Whitney test to find if  GVMweight are greater than TareWeights for Volkswagen
+
+#H0: GVM.weight is not greater to Tare.Weights
+#HA: GVM.weight is greater than Tare.weights
+
+wilcox.test(Volkswagen.GVM, Volkswagen.Tare, alternative = "greater")
+boxplot(Volkswagen.GVM, Volkswagen.Tare, names= c("GVM.weight", "Tare weight"), main="Boxplot of GVM and Tare weights of Volkswagen")
+#Since the p-value is more than 5%, the null hypothesis is favoured
+```
+
+- The box plot displays an overview of all GVM.weight and Tare.weight of Volkswagen vehicles from the max value to the min value, the mean, the range, the quartile data.
+
+- I used box plot technique to summarise both data of GVm and Tare weight of Volkswagen in to two box plot techniques, so that we observe the general differences between GVM and Tare weight of the vehicles Volkswagen. And we can see the GVM weight is generally higher than the Tare weight but at the same time, it has a higher range from max value to min value than the Tare weight of the vehicle Volkswagen
+
+- Since p-value is small (p = `r wilcox.test(Volkswagen.GVM, Volkswagen.Tare, alternative="greater")$p.value`), therefore reject the null hypothesis, and we can conclude that GVM.weight is greater than Tare.weights
+
+\newpage
+
+## Question 1.4:
+### *Test if there is a difference in proportions of the Silver vehicles between Landrover and Mercedes*
+
+```{r}
+l=length(subset(vehicles, Make=="Landrover", Colour, drop=TRUE))
+l
+m=length(subset(vehicles,Make=="Mercedes", Colour, drop=TRUE))
+m
+Colour.vehicles.table=table(vehicles$Make[vehicles$Colour=="Silver"])
+Colour.vehicles.table
+Silver.Landrover=Colour.vehicles.table[7]
+Silver.Landrover
+Silver.Mercedes=Colour.vehicles.table[9]
+Silver.Mercedes
+diff.proportion=(Silver.Landrover/l) - (Silver.Mercedes/m)
+diff.proportion
+```
+The difference in proportion between Silver Landrover and Mercedes would be `r diff.proportion`. Meaning the proportion of Silver Landrover is `r diff.proportion` higher than Silver Mercedes.
+
+\newpage
+
+## Question 1.5:
+### *The recent trend shows that people tend to buy more powerful vehicles. We would like to investigate whether there is a linear relationship between  the registration year and the mean of the number of cylinders*
+### *a/ Decide if the mean numbers of cylinders and the registration year are linearly related?*
+### *b/ If so, compute the equation to predict mean number of cylinders by using the registration year and discuss the significance of this equation? What is your estimate of the population mean number of cylinders when the year is 1984?*
+
+```{r}
+#a/
+min(vehicles$Year)
+max(vehicles$Year)    
+
+mean.calculate <- tapply(vehicles$Number.of.cylinders, vehicles$Year, mean)    
+mean.calculate
+
+year.register<- c(1985:2021)
+```
+
+```{r}
+#plotting the mean in N.cylinders depended on registration year
+mean.calculated=tapply(vehicles$Number.of.cylinders,vehicles$Year, mean)
+mean.calculated#this calculate the mean of cylinders of vehicles which has the same registration year
+year.registrated= c(1985:2021)
+
+#h0: r  = 0
+#hA: r != 0
+r.Correlation=cor(mean.calculated,year.registrated, method="pearson")
+r.Correlation # Correlation
+```
+r is a "really slight decreasing linear relationship", as r is `r r.Correlation`, which has intermediate downward slope.
+
+####
+
+####
+
+It is a slight decreasing linear relationship, we can still plot the linear equation to predict the next value of y or x. And we can also find the slope coefficient and intercept value through the function lm() as below:
+```{r}
+plot(y=mean.calculate, x=year.register, pch=5, main="Linear relationship between the number of cylinders and the registration years")
+abline(lm(mean.calculate~year.register))
+#There is a little to no downward trend but correlation coefficient is very weak.
+```
+
+
+
+```{r}
+#b/
+fit= lm(mean.calculate~year.register)
+fit
+slope= fit[[1]][2]
+slope
+intercept = fit[[1]][1]
+intercept
+
+x = 1990
+axis= slope*x + intercept
+axis
+```
+
+####
+- Therefore, y is the predict number of cylinder when choosing the registration year.
+
+- Therefore, axis = `r slope`x + `r intercept` is the new equation to find the predict number of cylinder 
+depending on registration year.
+-when the year is 1984 then the number of cylinder will equal to `r slope*x+intercept`
+
+\newpage
+
+## Question 2.1: Can a genuine causal relationship be established from this study? Justify your answer
+#### *This test genuinely cannot be concluded yet, multiple reasons are drawn:*
+
+-Small Sample Sizes: The dataset includes a relatively small number of marijuana users—approximately 30 individuals—compared to an even smaller group of non-users, around 20 individuals. In a quantitative experiment, a small sample size limits the generalisability of the findings, as fewer occurrences are measured. This increases variability in estimating the drug's effects and makes it more challenging to reach definitive conclusions. However, the study mitigates some errors by ensuring that both groups come from the same city and age range, reducing potential biases related to population and age differences. Nonetheless, applying these findings to different populations or age groups could lead to varying results, potentially reducing the accuracy and reliability of the analysis. 
+
+#
+
+## Question 2.2: Can the results be generalised to other 14- to 16-year-olds? Justify your answer
+#### *This experiment cannot be generalised to other 14 to 16 years old because:*
+A larger sample size and data collected from diverse populations, including different subgroups of 14- to 16-year-olds, are necessary to establish a consistent conclusion regarding the effects of marijuana use. Once a common pattern emerges, the findings can be reliably generalised to adolescents in this age range, allowing for a more professional and statistically confident assessment of marijuana’s impact on short-term memory. However, several factors contribute to variability in the results:
+
+##### Variabilities:
+1. Temporal Variation in Brain Development: Although the experiment was conducted on 14- to 16-year-olds, individual differences in brain development exist. Some adolescents may develop more slowly than their peers, making them more susceptible to poor test results. Given the small sample size, chance could lead to a disproportionate number of slower-developing individuals in the drug-user group, while the non-user group might consist of individuals with faster cognitive development, skewing the results.
+
+2. Population Differences: The findings cannot be applied to all 14- to 16-year-olds without testing a broader and more diverse sample, including different ethnicities and genders. Since the study was conducted on two sub-populations from the same larger population without specifying demographic details, the design is flawed. Drug effects may vary across genders and ethnic backgrounds, meaning the results may not be universally applicable.
+
+3. Variation in Dosage and Age: The effects of marijuana depend on both the user's age and the dosage consumed. Younger individuals are generally more sensitive to the drug’s effects, and higher doses can have a greater impact on memory function. If these factors are not carefully considered in the quantitative analysis, measurement errors may arise, further limiting the accuracy of the findings.
+
+#
+
+## Question 2.3: What are some potential confounding factors
+#### *There are some potential confounding factors occurred in the experiments, such as:*
+##### The designation of the sample sizes of the drug effects’ experiment:
+-A small sample size increases the likelihood that the selected sub-populations coincidentally share certain characteristics, meaning the observed effects of marijuana in the two groups may have occurred by chance. As a result, differences in outcomes could stem from the random selection of participants from the same population rather than the actual effects of the drug, introducing confounding factors in the study.
+
+##### The average dosage per users depending on their current ages:
+-The impact of marijuana varies based on both dosage and the user's age, but it is unclear which factor plays a more significant role. Since both variables can contribute to the observed effects, they act as confounding factors in the analysis.
+
+
+##### Population variations and gender types:
+-As previously mentioned, different populations and genders may respond differently to drug effects—some individuals may exhibit strong reactions, while others may show no response at all. Therefore, the neuropsychological test comparing drug users and non-users aged 14 to 16 from the same population may have produced results by chance. These findings may not necessarily apply to other populations or genders, making population variation and gender differences additional confounding factors in the study.
